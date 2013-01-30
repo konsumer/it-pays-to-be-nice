@@ -1,0 +1,146 @@
+body {
+    font-family: helvetica neue;
+    -webkit-user-select:none;
+}
+
+body,ul,li {
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+legend {
+  font-weight: bold;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+input {
+  margin-bottom: 8px;
+}
+
+.header {
+  position:absolute; z-index:2;
+  top:0; left:0;
+  width:100%;
+  height:45px;
+  line-height:45px;
+  padding:0;
+  font-size:20px;
+  text-align:center;
+}
+
+.header .btn {
+  position:absolute;
+  top: 5px;
+}
+
+#welcome .header .btn {
+  right: 5px;
+}
+
+#settings .header .btn {
+  left: 5px;
+}
+
+.btn, button {
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  display: inline-block;
+  padding: 0 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 200;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.frame {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: #F1F2F2;
+}
+
+.page-container {
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    overflow: hidden;
+    -webkit-transform:translate3d(0,0,0);
+
+}
+
+.page-content {
+    margin: 50px 10px;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.stage-center {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.stage-left {
+    left: -100%;
+    z-index: 0;
+}
+
+.stage-right {
+    left: 100%;
+    z-index: 0;
+}
+
+.transition {
+    -moz-transition-duration: .250s;
+    -webkit-transition-duration: .250s;
+    -o-transition-duration: .250s;
+}
+
+
+/* basic color scheme */
+body {
+  background-color: #E7EAEC;
+}
+
+legend {
+  text-shadow: 0 1px 0 #fff;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+}
+
+.header {
+  color:#eee;
+  background-image:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0, #fe96c9), color-stop(0.05, #d51875), color-stop(1, #7b0a2e));
+  background-image:-moz-linear-gradient(top, #fe96c9, #d51875 5%, #7b0a2e);
+  background-image:-o-linear-gradient(top, #fe96c9, #d51875 5%, #7b0a2e);
+}
+
+.btn, button {
+  color:#f3f3f3;
+  background:#d51875;
+  background: -webkit-gradient(linear, 0 0, 0 70%, from(#d51875), to(#7b0a2e));
+  background: linear-gradient(#d51875, #7b0a2e 70%);
+  border: 1px solid #7b0a2e;
+  text-shadow: 0 -1px 0 #fe96c9;
+}
+
+
+
