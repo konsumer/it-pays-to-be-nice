@@ -1,33 +1,54 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
-    <link rel="stylesheet" type="text/css" href="assets/site.css">
-    <title>It Pays To Be Nice</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet">
+  <link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/site.css">
+  <title>It Pays To Be Nice</title>
 </head>
 <body>
-    <div class="frame">
-        <div  id="container" class="page-container">
-            <div id="welcome" class="transition page stage-center">
-                <div class="header">It Pays To Be Nice <a class="btn" href="javascript:settings()">settings</a></div>
-                <div class="page-content">
-                    <p>Wes anderson freegan typewriter pickled pop-up, ex magna anim blue bottle exercitation tumblr biodiesel photo booth actually nostrud. Stumptown pitchfork incididunt etsy church-key, actually authentic narwhal pour-over occupy four loko consectetur marfa. Fugiat truffaut tempor banjo post-ironic. Pinterest truffaut authentic keffiyeh meh, portland 90's reprehenderit. Eu exercitation high life, mumblecore flannel butcher aute lo-fi YOLO banksy gastropub et. Actually yr food truck hashtag marfa locavore. Pitchfork pinterest twee, terry richardson disrupt ex flannel pour-over mustache post-ironic tonx.</p>
-                </div>
-            </div>
 
-            <div id="settings" class="transition page stage-right">
-                <div class="header"><a class="btn" href="javascript:welcome()">back</a> settings</div>
-                <div class="page-content">
-                    <h1>settings go here.</h1>
-                </div>
-            </div>
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <span class="brand">It Pays To Be Nice</span>
+    </div>
+  </div>
 
-        </div>
+  <form class="page container form-horizontal">
+    <div class="control-group">
+      <label class="control-label" for="who">give</label>
+      <div class="controls">
+        @<select id="who"></select>
+        <button onclick="return newUser();" class="btn btn-success"><i class=" icon-user"></i> new</button>
+      </div>
     </div>
 
-<script src="assets/zepto.min.js"></script>
-<script src="assets/lawnchair-0.6.1.min.js"></script>
-<script src="assets/phonegap.js"></script>
-<script src="assets/site.js"></script>
+   <div class="control-group">
+      <div class="controls">
+        $<select id="amount"></select>
+        <button onclick="return newAmount();" class="btn btn-success"><i class="icon"> $</i> new</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label" for="reasons">for </label>
+      <div class="controls">
+        <select id="reasons"></select>
+        <button onclick="return newReason();" class="btn btn-success"><i class="icon-thumbs-up"></i> new</button>
+      </div>
+    </div>
+
+    <div class="controls"><button onclick="return sendIt();" class="btn btn-primary btn-large"><i class="icon-heart"></i> pay</button></div>
+  </form>
+
+
+  <script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+  <script src="https://raw.github.com/jarednova/jquery-total-storage/master/jquery.total-storage.min.js"></script>
+  <script src="assets/phonegap.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/js/bootstrap.min.js"></script>
+  <script src="assets/site.js"></script>
 
 </body>
 </html>
