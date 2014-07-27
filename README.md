@@ -6,7 +6,7 @@ Kristin Says:
 Install on iOS, Android, Windows Phone, Blackberry, WebOS & Symbian:
 
 
-[![Install](https://chart.googleapis.com/chart?chs=116x116&cht=qr&chl=http://build.phonegap.com/apps/295917/install/?qr_key=18auDrcMQTMiLsbfMq4c&chld=L|1&choe=UTF-8)](http://build.phonegap.com/apps/295917/install/?qr_key=18auDrcMQTMiLsbfMq4c&chld=L|1&choe=UTF-8)
+[![Install](https://chart.googleapis.com/chart?chs=116x116&cht=qr&chl=http://build.phonegap.com/apps/1023605/install/?qr_key=GVqgGvD4BzqyCPJ4o4zE&chld=L|1&choe=UTF-8)](http://build.phonegap.com/apps/1023605/install/?qr_key=18auDrcMQTMiLsbfMq4c&chld=L|1&choe=UTF-8)
 
 ## Pay Us
 
